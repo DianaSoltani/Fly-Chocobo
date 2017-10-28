@@ -1,0 +1,33 @@
+{
+  "name": "Fly-Chocobo",
+  "version": "0.0.2",
+  "description": "A flappy bird style game developed for fun at HackRU Fall 2017.",
+  "main": "Server.js",
+  "dependencies": {
+    "express": "4.16.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DianaSoltani/Fly-Chocobo.git"
+  },
+  "keywords": [],
+  "author": "Diana Soltani",
+  "contributors": [{
+    "name": "Diana Soltani",
+    "email": "mystery@dianasoltani.me"
+  },
+  {
+    "name": "Brandon Diaz-Abreu",
+    "email": "mail@fullstackman.net"
+  }],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DianaSoltani/Fly-Chocobo/issues"
+  },
+  "homepage": "https://github.com/DianaSoltani/Fly-Chocobo"
+}
