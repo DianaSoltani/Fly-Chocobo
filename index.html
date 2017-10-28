@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Fly Chocobo</title>
-
+	<title>Fly Chocobo!</title>
 	<!-- Importing and connecting js and framework to 
 		html5 doc-->
-	
 	<script type="text/javascript" src = "phaser.min.js"></script>
 	<script type="text/javascript" src = "chocoboFly.js"></script>
 	<style>
 		body {
 			background:#202028;
-			color: #FAFF05;
 			font-family: sans-serif;
-			font-size: 2em;
-			text-align: center;
-			
+			color: moccasin;
 		}
-		canvas {/*"margin: 0px auto;" centers the canvas*/
-			margin: 0px auto; 
+		h1,h2,h3,h4,h5,h6{
+			font-size: 3em;
+			line-height: 0.1em;
+			color: #FAFF05;
+		}
+		#control-box{
+			display: inline-block;
+		}
+		#control-box p{
+			margin: 5px 0;
+		}
+		#adventureTime{
+			position: fixed;
+			right: 0;
+		}
+		.vsc-initialized > canvas {
+			display: inline-block !important;
+			/*centers the canvas*/
+			margin: 0 20px; 
 			border: solid .2em #fff;
-			height:90vh;
+			/*height: 90vh; gets overwritten by the framework code*/
 		}
 	</style>
-
-
 </head>
 <body>
-	<h1>HackRU 2017</h1>
-	<h2> Fly Chocobo! </h2>
-
+	<h1>Fly Chocobo</h1>
+	<p>A HackRU Fall 2017 Project</p>
+	<section id="control-box">
+		<h2>Controls</h2>
+		<p>Spacebar: fly</p>
+		<p>Right arrow key: shoot</p>
+	</section>
 	<!-- Adventure Time by Music Predators:
 			 No Copyright Sounds-->
-	<audio id= "Adventure Time" src = "advTime.mp3" loop ="loop" autoplay="autoplay" controls >
+	<audio id="adventureTime" src ="advTime.mp3" loop ="loop" autoplay="autoplay" controls >
 		<p> Audio is not supported in this browser/browser version </p>
 	</audio>
-	<p>Spacebar to fly</p>
-	<p>Right arrow key to shoot</p>
 </body>
 </html>
